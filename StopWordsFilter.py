@@ -4,6 +4,6 @@ corpus = [
 'Duke lost the basketball game',
 'I ate a sandwich'
 ]
-vectorizer = CountVectorizer()
+vectorizer = CountVectorizer(stop_words='english')
 print (vectorizer.fit_transform(corpus).todense())
 print (vectorizer.vocabulary_)
